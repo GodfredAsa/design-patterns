@@ -9,7 +9,7 @@ public class DbSingleton {
     }
 
     public static DbSingleton getInstance(){
-      if(instance ==null){
+      if(instance == null){
           synchronized (DbSingleton.class){
               if(instance ==null) instance = new DbSingleton();
           }
